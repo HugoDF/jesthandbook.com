@@ -66,8 +66,6 @@ Get testing superpowers by leveraging underused Jest features.
 ## Learning outcomes
 
 > 🚧 Work in progress
-> 
-> [(https://buttondown.email/hugo)
 
 1. Gain a deep understanding of the options available to the Jest CLI and how to use different views to write and debug tests more effectively. 
 2. Leverage spying, stubbing and module import interception functionality in tests and create mock JavaScript object instances, stub ES6 classes and mock out global objects.
@@ -78,8 +76,6 @@ Get testing superpowers by leveraging underused Jest features.
 ## Table of Contents
 
 > 🚧 Work in progress
-> 
-> [Subscribe for free resources on Jest's best features and a discount on the final handbook](https://buttondown.email/hugo)
 
 1. Jest/Jest CLI expert - Debugging tests
     - run jest tests sequentially why/how
