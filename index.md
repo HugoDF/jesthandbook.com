@@ -59,6 +59,7 @@ Get testing superpowers by leveraging underused Jest features.
   <label for="bd-email">Subscribe for free resources on Jest's best features and a discount on the final handbook</label>
   <input type="email" name="email" id="bd-email">
   <input type="hidden" value="1" name="embed">
+  <input type="hidden" name="tag" value="jesthandbook" />
   <input type="submit" value="Subscribe">
 </form>
 
@@ -118,6 +119,7 @@ Get testing superpowers by leveraging underused Jest features.
   <label for="bd-email">Subscribe for free resources on Jest's best features and a discount on the final handbook</label>
   <input type="email" name="email" id="bd-email">
   <input type="hidden" value="1" name="embed">
+  <input type="hidden" name="tag" value="jesthandbook" />
   <input type="submit" value="Subscribe">
 </form>
 
