@@ -39,15 +39,20 @@
     display: flex;
   }
 </style>
-
-> 🚧 _Coming soon_
-
 <img src="./jest.png" class="logo" width="100px" alt="Jest Logo" />
 
 Learn Advanced JavaScript Testing patterns with Jest.
 
 
 Get testing superpowers by leveraging underused Jest features.
+
+## Who is this for?
+
+The Jest Handbook has 3 main audiences:
+
+1. You're a JavaScript developer who wants to learn unit testing
+2. You're come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript
+3. You're proficient at testing in JavaScript and would like to learn Jest best-practices and featureset
 
 <form
   action="https://buttondown.email/api/emails/embed-subscribe/hugo"
@@ -89,13 +94,13 @@ Get testing superpowers by leveraging underused Jest features.
    - master Object.defineProperty to create mock JavaScript application object instances
    - Mocking of CommonJS and ES6 imports
 
-3. Testing synchronous vs asynchronous code
+5. Testing synchronous vs asynchronous code
    - `test('a', async () => { await codeUnderTest() })`
    - Testing for asynchronous throws (`return expect().rejects`)
    - mocking output of synchronous and asynchronous functions
    - failing a test programmatically `fail()`, `throw 'foo'`
 
-4. Partial matches
+6. Partial matches
    - objectContaining
    - arrayContaining
    - nested arrayContaining, objectContaining
