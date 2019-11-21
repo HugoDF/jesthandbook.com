@@ -1,5 +1,5 @@
 <style>
-  input[type="submit"] {
+  button {
     display: block;
     width: 100%;
     background: #26A8ED;
@@ -13,24 +13,6 @@
     box-sizing: border-box;
     cursor: pointer;
     margin-bottom: 0.5em;
-  }
-  label {
-    color: #7e8a9a;
-    margin-bottom: 0.25em;
-    display: inline-block;
-  }
-  input[type="email"] {
-    background-color: 0 0;
-    border: 1px solid #ced3d9;
-    border-radius: 4px;
-    display: block;
-    padding: 0.75em 1em;
-    width: 100%;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.4em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   .logo {
     margin-left: auto;
