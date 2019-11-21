@@ -2,17 +2,17 @@
   button {
     display: block;
     width: 100%;
+    max-width: 320px;
+    margin: 2em auto;
     background: #26A8ED;
     border: 0;
     border-radius: 0.25em;
     color: #fff;
     outline: 0;
-    padding: 0.75em 1em;
-    width: 100%;
+    padding: 1em 1.5em;
     font-size: 16px;
     box-sizing: border-box;
     cursor: pointer;
-    margin-bottom: 0.5em;
   }
   .logo {
     margin-left: auto;
