@@ -39,7 +39,7 @@
     display: flex;
   }
 </style>
-<img src="./jest.png" class="logo" width="100px" alt="Jest Logo" />
+<img src="https://i.imgur.com/XxWABVw.png" class="logo" width="500px" alt="Jest Logo" />
 
 Learn Advanced JavaScript Testing patterns with Jest.
 
@@ -48,25 +48,16 @@ Get testing superpowers by leveraging underused Jest features.
 
 ## Who is this for?
 
-The Jest Handbook has 3 main audiences:
 
-1. You're a JavaScript developer who wants to learn unit testing
-2. You're come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript
-3. You're proficient at testing in JavaScript and would like to learn Jest best-practices and featureset
+You're a JavaScript developer who wants to learn unit testing?
 
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/hugo"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/hugo', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Subscribe for free resources on Jest's best features and a discount on the final handbook</label>
-  <input type="email" name="email" id="bd-email">
-  <input type="hidden" value="1" name="embed">
-  <input type="hidden" name="tag" value="jesthandbook" />
-  <input type="submit" value="Subscribe">
-</form>
+You come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript?
+
+You're proficient at testing in JavaScript and would like to learn Jest best-practices and featureset?
+
+The Jest Handbook is for you.
+
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Pre-order now</button>
 
 
 ## Learning outcomes
@@ -116,20 +107,12 @@ The Jest Handbook has 3 main audiences:
    - using Jest coverage reports to find code that's not being exercised
    - exclude a line, file or statement from coverage reports
 
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/hugo"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/hugo', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Subscribe for free resources on Jest's best features and a discount on the final handbook</label>
-  <input type="email" name="email" id="bd-email">
-  <input type="hidden" value="1" name="embed">
-  <input type="hidden" name="tag" value="jesthandbook" />
-  <input type="submit" value="Subscribe">
-</form>
+
+Interested in upgrading your Jest and testing game?
+
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Pre-order now</button>
 
 
+<script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
 <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
 <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
