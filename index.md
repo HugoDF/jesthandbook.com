@@ -39,7 +39,7 @@ You're proficient at testing in JavaScript and would like to learn Jest best-pra
 
 The Jest Handbook is for you.
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Pre-order now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
 
 
 ## Learning outcomes
@@ -92,7 +92,7 @@ The Jest Handbook is for you.
 
 Interested in upgrading your Jest and testing game?
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Pre-order now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
 
 
 <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
