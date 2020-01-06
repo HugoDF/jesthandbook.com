@@ -120,6 +120,9 @@ Hugo has also written some of the top articles on the internet about Jest at [co
 - [Jest .fn() and .spyOn() spy/stub/mock assertion reference](https://codewithhugo.com/jest-fn-spyon-stub-mock/)
 - [Jest ignore or exclude file/function/statement from test coverage](https://codewithhugo.com/jest-exclude-coverage/)
 
+
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
+
 <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
 <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
 <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
