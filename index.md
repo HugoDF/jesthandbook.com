@@ -28,6 +28,9 @@ Learn Advanced JavaScript Testing patterns with Jest.
 
 Get testing superpowers by leveraging underused Jest features.
 
+
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
+
 ## Who is this for?
 
 
@@ -38,9 +41,6 @@ You come from a non-JS background and want to apply your existing unit testing k
 You're proficient at testing in JavaScript and would like to learn Jest best-practices and featureset?
 
 The Jest Handbook is for you.
-
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
-
 
 ## Learning outcomes
 
@@ -90,10 +90,35 @@ The Jest Handbook is for you.
    - exclude a line, file or statement from coverage reports
 
 
-Interested in upgrading your Jest and testing game?
+> Interested in upgrading your Jest and testing game?
 
 <button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
 
+
+## Why Jest? A note from the author
+
+Jest is the most widespread solution to test JavaScript applications. Jest is a modern, batteries-included testing framework that comes with all features you need to set up for your JavaScript tests including coverage, interactive watch mode, advanced matchers.
+
+Jest is the leading test framework in terms of downloads as of 2020 as per [npmtrends Jest vs Mocha vs AVA     vs Jasmine vs QUnit vs Chai](https://www.npmtrends.com/jest-vs-mocha-vs-ava-vs-jasmine-vs-qunit-vs-chai). Jest came out of efforts from Facebook. It's is used at a plethora of small and large companies including Facebook, AirBnB, The New York Times and Spotify.
+ 
+![2 year trends (November 2019) for Jest vs Mocha, AVA, Jasmine, QUnit and Chai](./jest-vs-other.jpg)
+
+I've looked around the web for resources dedicated to teaching you the ins and outs of Jest. The vast majority of solutions are GitHub issues or StackOverflow posts, and there are a few React/Vue.js (framework specific) testing books out there. None really focus on Jest itself and how it can be leveraged to write better tests, faster.
+
+The Jest Handbook is an example and solutions-driven book that will teach you in the ins and outs of testing JavaScript applications with Jest.
+
+## About the Author
+
+Hugo Di Francesco is a co-author of "Professional JavaScript" with Packt. He runs the Code with Hugo website helping over 100,000 developers every month and holds an MEng in Mathematical Computation from University College London (UCL). He has used JavaScript extensively to create scalable and performant platforms at companies such as Canon and Elsevier.
+
+Hugo has also written some of the top articles on the internet about Jest at [codewithhugo.com/tags/jest/](https://codewithhugo.com/tags/jest/) including:
+
+- [A testing guide for Express with request and response mocking/stubbing using Jest](https://codewithhugo.com/express-request-response-mocking/)
+- [How to run, ignore or skip Jest tests, suites and files](https://codewithhugo.com/run-skip-single-jest-test/)
+- [Jest Full and Partial Mock/Spy of CommonJS and ES6 Module Imports](https://codewithhugo.com/jest-mock-spy-module-import/)
+- [Mocking/stubbing the current Date in Jest tests](https://codewithhugo.com/mocking-the-current-date-in-jest-tests/)
+- [Jest .fn() and .spyOn() spy/stub/mock assertion reference](https://codewithhugo.com/jest-fn-spyon-stub-mock/)
+- [Jest ignore or exclude file/function/statement from test coverage](https://codewithhugo.com/jest-exclude-coverage/)
 
 <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
 <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
