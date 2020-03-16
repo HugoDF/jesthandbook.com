@@ -29,7 +29,7 @@ Learn Advanced JavaScript Testing patterns with Jest.
 Get testing superpowers by leveraging underused Jest features.
 
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 30% Launch Discount now</button>
 
 ## Who is this for?
 
@@ -92,7 +92,7 @@ The Jest Handbook is for you.
 
 > Interested in upgrading your Jest and testing game?
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 30% Launch Discount now</button>
 
 
 ## Why Jest? A note from the author
@@ -121,7 +121,7 @@ Hugo has also written some of the top articles on the internet about Jest at [co
 - [Jest ignore or exclude file/function/statement from test coverage](https://codewithhugo.com/jest-exclude-coverage/)
 
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 45% Pre-order Discount now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the 30% Launch Discount now</button>
 
 <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
 <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
