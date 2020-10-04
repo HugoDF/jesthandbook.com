@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Jest Handbook - Learn Advanced JavaScript Testing patterns with Jest." />
+  <title>The Jest Handbook - Learn Advanced JavaScript Testing patterns with Jest.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.x.x/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
+  <style>button { background: #26A8ED; }</style>
+</head>
+
+<body>
+  <div class="prose mx-auto px-6 py-6">
+
+    <div class="flex flex-col md:flex-row-reverse">
+      <img src="./cover.jpg" class="max-w-xs shadow-2xl flex mx-auto" alt="The Jest Handbook Cover" />
+      <div class="flex flex-col self-center md:pr-10">
+        <h2>The Jest Handbook</h2>
+        <p>Learn Advanced JavaScript Testing patterns with Jest.</p>
+        <p>Get testing superpowers by leveraging underused Jest features.</p>
+        <button class="cp-button rounded hover:bg-blue-400 text-white mt-10 py-4 font-bold" data-seller="hugo"
+          data-checkout="jest-handbook">I want this</button>
+      </div>
+    </div>
+    <h3 id="who-is-this-for">Who is this for?</h3>
+    <p>You're a JavaScript developer who wants to learn unit testing?</p>
+    <p>You come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript?</p>
+    <p>You're proficient at testing in JavaScript and would like to learn Jest best-practices and featureset?</p>
+    <p>The Jest Handbook is for you.</p>
+    <h3 id="learning-outcomes">Learning outcomes</h3>
+    <ol>
+      <li>Gain a deep understanding of the options available to the Jest CLI and how to use different views to write and
+        debug tests more effectively.</li>
+      <li>Leverage spying, stubbing and module import interception functionality in tests and create mock JavaScript
+        object instances, stub ES6 classes and mock out global objects.</li>
+      <li>Use and contrast 2 approaches to testing backend applications with Jest as well as illustrate synchronous and
+        asynchronous testing patterns.</li>
+      <li>Employ advanced Jest partial matchers to write tests with high specificity and reduce toil when updating
+        application code.</li>
+      <li>Leverage Jest's built-in coverage tool to set minimum coverage thresholds, find parts of the code that aren't
+        tested and how to disable it in specific cases.</li>
+    </ol>
+    <h3 id="table-of-contents">Table of Contents</h3>
+    <ol>
+      <li>
+        <p>Jest/Jest CLI expert - Debugging tests</p>
+        <ul>
+          <li>run jest tests sequentially why/how</li>
+          <li>run single file/folder</li>
+          <li>run single test</li>
+          <li>interactive watch mode (filtering by file name, failing tests, test filename regex)</li>
+          <li>running in CI mode</li>
+        </ul>
+      </li>
+      <li>
+        <p>Spying, stubbing - become a stub/mock function assertion pro</p>
+        <ul>
+          <li>mock assertion reference</li>
+          <li>set, clear, reset mocks and spies</li>
+          <li>example: mocking the current date (how to mock a global object/class) -&gt; 4 examples</li>
+          <li>stub ES6 class &quot;extends&quot;</li>
+          <li>master Object.defineProperty to create mock JavaScript application object instances</li>
+          <li>Mocking of CommonJS and ES6 imports</li>
+        </ul>
+      </li>
+      <li>
+        <p>Testing synchronous vs asynchronous code</p>
+        <ul>
+          <li><code>test('a', async () =&gt; { await codeUnderTest() })</code></li>
+          <li>Testing for asynchronous throws (<code>return expect().rejects</code>)</li>
+          <li>mocking output of synchronous and asynchronous functions</li>
+          <li>failing a test programmatically <code>fail()</code>, <code>throw 'foo'</code></li>
+        </ul>
+      </li>
+      <li>
+        <p>Partial matches</p>
+        <ul>
+          <li>objectContaining</li>
+          <li>arrayContaining</li>
+          <li>nested arrayContaining, objectContaining</li>
+          <li>assert over only some of the parameters <code>expect.anything()</code></li>
+          <li><code>expect.any(Function)</code> etc.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Philosophies to write unit tests for Express.js</p>
+        <ul>
+          <li>mock request/response objects in-memory</li>
+          <li>leverage supertest</li>
+        </ul>
+      </li>
+      <li>
+        <p>Coverage in Jest</p>
+        <ul>
+          <li>coverage thresholds</li>
+          <li>using Jest coverage reports to find code that's not being exercised</li>
+          <li>exclude a line, file or statement from coverage reports</li>
+        </ul>
+      </li>
+    </ol>
+    <blockquote>
+      <p>Interested in upgrading your Jest and testing game?</p>
+    </blockquote>
+    <button class="cp-button rounded hover:bg-blue-400 text-white px-6 py-4 mx-auto block font-bold" data-seller="hugo"
+      data-checkout="jest-handbook">Get the Jest Handbook (100 pages)
+      now</button>
+    <h3 id="why-jest-a-note-from-the-author">Why Jest? A note from the author</h3>
+    <p>Jest is the most widespread solution to test JavaScript applications. Jest is a modern, batteries-included
+      testing
+      framework that comes with all features you need to set up for your JavaScript tests including coverage,
+      interactive
+      watch mode, advanced matchers.</p>
+    <p>Jest is the leading test framework in terms of downloads as of 2020 as per <a
+        href="https://www.npmtrends.com/jest-vs-mocha-vs-ava-vs-jasmine-vs-qunit-vs-chai">npmtrends Jest vs Mocha vs AVA
+        vs Jasmine vs QUnit vs Chai</a>. Jest came out of efforts from Facebook. It's is used at a plethora of small and
+      large companies including Facebook, AirBnB, The New York Times and Spotify.</p>
+    <p><img src="./jest-vs-other.jpg"
+        alt="2 year trends (November 2019) for Jest vs Mocha, AVA, Jasmine, QUnit and Chai"></p>
+    <p>I've looked around the web for resources dedicated to teaching you the ins and outs of Jest. The vast majority of
+      solutions are GitHub issues or StackOverflow posts, and there are a few React/Vue.js (framework specific) testing
+      books out there. None really focus on Jest itself and how it can be leveraged to write better tests, faster.</p>
+    <p>The Jest Handbook is an example and solutions-driven book that will teach you in the ins and outs of testing
+      JavaScript applications with Jest.</p>
+    <h3 id="about-the-author">About the Author</h3>
+    <p>Hugo Di Francesco is a co-author of &quot;Professional JavaScript&quot; with Packt. He runs the Code with Hugo
+      website helping over 100,000 developers every month and holds an MEng in Mathematical Computation from University
+      College London (UCL). He has used JavaScript extensively to create scalable and performant platforms at companies
+      such as Canon and Elsevier.</p>
+    <p>Hugo has also written some of the top articles on the internet about Jest at <a
+        href="https://codewithhugo.com/tags/jest/">codewithhugo.com/tags/jest/</a> including:</p>
+    <ul>
+      <li><a href="https://codewithhugo.com/express-request-response-mocking/">A testing guide for Express with request
+          and response mocking/stubbing using Jest</a></li>
+      <li><a href="https://codewithhugo.com/run-skip-single-jest-test/">How to run, ignore or skip Jest tests, suites
+          and
+          files</a></li>
+      <li><a href="https://codewithhugo.com/jest-mock-spy-module-import/">Jest Full and Partial Mock/Spy of CommonJS and
+          ES6 Module Imports</a></li>
+      <li><a href="https://codewithhugo.com/mocking-the-current-date-in-jest-tests/">Mocking/stubbing the current Date
+          in
+          Jest tests</a></li>
+      <li><a href="https://codewithhugo.com/jest-fn-spyon-stub-mock/">Jest .fn() and .spyOn() spy/stub/mock assertion
+          reference</a></li>
+      <li><a href="https://codewithhugo.com/jest-exclude-coverage/">Jest ignore or exclude file/function/statement from
+          test coverage</a></li>
+    </ul>
+    <button class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
+      data-seller="hugo" data-checkout="jest-handbook">Get The Jest Handbook now</button>
+  </div>
+  
+  <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
+  <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+  <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</body>
+
+</html>

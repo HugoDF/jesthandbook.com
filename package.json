@@ -1,0 +1,23 @@
+{
+  "name": "jesthandbook.com",
+  "private": "true",
+  "main": "index.js",
+  "dependencies": {
+    "inline-remote-assets": "^0.6.1",
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "scripts": {
+    "build": "eleventy && inline-remote-assets _site/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoDF/jesthandbook.com.git"
+  },
+  "keywords": [],
+  "author": "Hugo Di Francesco",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/HugoDF/jesthandbook.com/issues"
+  },
+  "homepage": "https://github.com/HugoDF/jesthandbook.com#readme"
+}
