@@ -22,7 +22,7 @@
   }
 </style>
 
-<img src="/cover.jpg" class="logo" width="500px" alt="Jest Logo" />
+<img src="/cover.jpg" class="logo" width="250px" alt="Jest Logo" />
 
 Learn Advanced JavaScript Testing patterns with Jest.
 
