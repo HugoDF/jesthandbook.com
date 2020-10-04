@@ -30,7 +30,7 @@ Learn Advanced JavaScript Testing patterns with Jest.
 Get testing superpowers by leveraging underused Jest features.
 
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Level up your JavaScript testing with the Jest Handbook (200+ pages)</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Level up your JavaScript testing with the Jest Handbook (100 pages)</button>
 
 ## Who is this for?
 
@@ -93,7 +93,7 @@ The Jest Handbook is for you.
 
 > Interested in upgrading your Jest and testing game?
 
-<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the Jest Handbook (200+ pages) now</button>
+<button class="cp-button" data-seller="hugo" data-checkout="jest-handbook">Get the Jest Handbook (100 pages) now</button>
 
 
 ## Why Jest? A note from the author
