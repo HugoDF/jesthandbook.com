@@ -8,27 +8,52 @@
   <title>The Jest Handbook - Learn Advanced JavaScript Testing patterns with Jest.</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.x.x/dist/tailwind.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
-  <style>button { background: #26A8ED; } .object-some-left { object-position: 20%; }</style>
+  <style>
+    button {
+      background: #26A8ED;
+    }
+
+    .object-some-left {
+      object-position: 20%;
+    }
+  </style>
 </head>
 
 <body>
   <div class="prose mx-auto px-6 py-6">
     <h2>The Jest Handbook</h2>
-    <p style="margin-bottom: 0;">Learn Advanced JavaScript Testing patterns with Jest. Get testing superpowers by leveraging underused Jest features.</p>
-    <img 
-      style="min-height: 370px; margin-top: 0;"
-      class="hidden md:block object-cover object-some-left"
-      src="./jest-handbook-3d-3-device.png"
-      alt="The Jest Handbook Cover"
-    />
-    <img 
-      style="min-height: 250px; margin-top: 0;" 
-      class="md:hidden object-cover object-some-left"
-      src="./jest-handbook-3d-2-book.png"
-      alt="The Jest Handbook Cover"
-    />
-    <button class="cp-button w-full md:w-1/2 md:mx-auto block rounded hover:bg-blue-400 text-white py-4 font-bold" data-seller="hugo"
-      data-checkout="jest-handbook">I want this</button>
+    <p style="margin-bottom: 0;">Learn Advanced JavaScript Testing patterns with Jest. Get testing superpowers by
+      leveraging underused Jest features.</p>
+    <div id="img">
+      <div style="min-height: 370px;" class="hidden md:block"></div>
+      <div style="min-height: 250px;" class="md:hidden"></div>
+    </div>
+    <script>
+      (function () {
+        function image(width) {
+          if (width > 768) {
+            document.querySelector('#img').innerHTML = `<img 
+              style="min-height: 370px; margin-top: 0;"
+              class="hidden md:block object-cover object-some-left"
+              src="./jest-handbook-3d-3-device.png"
+              alt="The Jest Handbook Cover"
+            />`
+          } else {
+            document.querySelector('#img').innerHTML = `<img 
+              style="min-height: 250px; margin-top: 0;" 
+              class="md:hidden object-cover object-some-left"
+              src="./jest-handbook-3d-2-book.png"
+              alt="The Jest Handbook Cover"
+            />`
+          }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          image(window.innerWidth)
+        })
+      })()
+    </script>
+    <button class="cp-button w-full md:w-1/2 md:mx-auto block rounded hover:bg-blue-400 text-white py-4 font-bold"
+      data-seller="hugo" data-checkout="jest-handbook">I want this</button>
     <h3 id="who-is-this-for">Who is this for?</h3>
     <p>You're a JavaScript developer who wants to learn unit testing?</p>
     <p>You come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript?</p>
@@ -129,12 +154,8 @@
     <p>The Jest Handbook is an example and solutions-driven book that will teach you in the ins and outs of testing
       JavaScript applications with Jest.</p>
     <h3 id="about-the-author">
-      <img 
-        class="inline-block h-16 w-16 rounded" 
-        alt="Hugo Di Francesco" 
-        src="./hugo-x100.jpg"
-        style="margin-top: 1rem; margin-bottom: 1rem;"
-      > About the Author
+      <img class="inline-block h-16 w-16 rounded" alt="Hugo Di Francesco" src="./hugo-x100.jpg"
+        style="margin-top: 1rem; margin-bottom: 1rem;"> About the Author
     </h3>
     <p>Hugo Di Francesco is a co-author of &quot;Professional JavaScript&quot; with Packt. He runs the Code with Hugo
       website helping over 100,000 developers every month and holds an MEng in Mathematical Computation from University
@@ -161,7 +182,7 @@
     <button class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
       data-seller="hugo" data-checkout="jest-handbook">Get The Jest Handbook now</button>
   </div>
-  
+
   <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
   <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
   <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
