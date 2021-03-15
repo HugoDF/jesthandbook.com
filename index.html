@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@1.x.x/dist/tailwind.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
   <style>
-    button {
+    .cp-button {
       background: #26A8ED;
+      color: white !important;
+      text-decoration: none !important;
+      text-align: center!important;
     }
 
     .object-some-left {
@@ -34,12 +37,16 @@
           if (width > 768) {
             document.querySelector('#img').innerHTML = `<img 
               style="min-height: 370px; margin-top: 0;"
+              height="370"
+              width="100%"
               class="hidden md:block object-cover object-some-left"
               src="./jest-handbook-3d-3-device.png"
               alt="The Jest Handbook Cover"
             />`
           } else {
             document.querySelector('#img').innerHTML = `<img 
+              height="250"
+              width="100%"
               style="min-height: 250px; margin-top: 0;" 
               class="md:hidden object-cover object-some-left"
               src="./jest-handbook-3d-2-book.png"
@@ -52,8 +59,8 @@
         })
       })()
     </script>
-    <button class="cp-button w-full md:w-1/2 md:mx-auto block rounded hover:bg-blue-400 text-white py-4 font-bold"
-      data-seller="hugo" data-checkout="jest-handbook">I want this</button>
+    <a class="cp-button w-full md:w-1/2 md:mx-auto block rounded hover:bg-blue-400 text-white py-4 font-bold"
+      href="https://checkoutpage.co/checkout/hugo/jest-handbook">I want this</a>
     <h3 id="who-is-this-for">Who is this for?</h3>
     <p>You're a JavaScript developer who wants to learn unit testing?</p>
     <p>You come from a non-JS background and want to apply your existing unit testing knowledge in JavaScript?</p>
@@ -133,9 +140,8 @@
     <blockquote>
       <p>Interested in upgrading your Jest and testing game?</p>
     </blockquote>
-    <button class="cp-button rounded hover:bg-blue-400 text-white px-6 py-4 mx-auto block font-bold" data-seller="hugo"
-      data-checkout="jest-handbook">Get the Jest Handbook (100 pages)
-      now</button>
+    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook" class="cp-button rounded hover:bg-blue-400 text-white px-6 py-4 mx-auto block font-bold">Get the Jest Handbook (100 pages)
+      now</a>
     <h3 id="why-jest-a-note-from-the-author">Why Jest? A note from the author</h3>
     <p>Jest is the most widespread solution to test JavaScript applications. Jest is a modern, batteries-included
       testing
@@ -155,6 +161,8 @@
       JavaScript applications with Jest.</p>
     <h3 id="about-the-author">
       <img class="inline-block h-16 w-16 rounded" alt="Hugo Di Francesco" src="./hugo-x100.jpg"
+        width="64"
+        height="64"
         style="margin-top: 1rem; margin-bottom: 1rem;"> About the Author
     </h3>
     <p>Hugo Di Francesco is a co-author of &quot;Professional JavaScript&quot; with Packt. He runs the Code with Hugo
@@ -179,11 +187,10 @@
       <li><a href="https://codewithhugo.com/jest-exclude-coverage/">Jest ignore or exclude file/function/statement from
           test coverage</a></li>
     </ul>
-    <button class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
-      data-seller="hugo" data-checkout="jest-handbook">Get The Jest Handbook now</button>
+    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook" class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
+      data-seller="hugo" data-checkout="jest-handbook">Get The Jest Handbook now</a>
   </div>
 
-  <script type="text/javascript" src="https://checkoutpage.co/js/overlay.js" defer></script>
   <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
   <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
 </body>
