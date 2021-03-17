@@ -13,7 +13,7 @@
       background: #26A8ED;
       color: white !important;
       text-decoration: none !important;
-      text-align: center!important;
+      text-align: center !important;
     }
 
     .object-some-left {
@@ -27,36 +27,61 @@
     <h2>The Jest Handbook</h2>
     <p style="margin-bottom: 0;">Learn Advanced JavaScript Testing patterns with Jest. Get testing superpowers by
       leveraging underused Jest features.</p>
-    <div id="img">
-      <div style="min-height: 370px;" class="hidden md:block"></div>
-      <div style="min-height: 250px;" class="md:hidden"></div>
+    <div>
+      <div style="min-height: 370px;" class="hidden sm:block" id="img-large"></div>
+      <div style="max-height: 300px;" class="sm:hidden" id="img-small"></div>
     </div>
     <script>
       (function () {
+        let lastImgInjection = null;
+
         function image(width) {
-          if (width > 768) {
-            document.querySelector('#img').innerHTML = `<img 
-              style="min-height: 370px; margin-top: 0;"
-              height="370"
-              width="100%"
-              class="hidden md:block object-cover object-some-left"
-              src="./jest-handbook-3d-3-device.png"
-              alt="The Jest Handbook Cover"
-            />`
+          if (width > 640) {
+            if (lastImgInjection === 'large') return;
+            lastImgInjection = 'large';
+            document.querySelector('#img-large').innerHTML = `
+              <picture
+                style="min-height: 370px; margin: 0;" 
+                class="hidden sm:block object-cover object-some-left"
+              >
+                <source srcset="./jest-handbook-3d-3-device.webp" type="image/webp">
+                <source srcset="./jest-handbook-3d-3-device.png" type="image/png">
+                <img 
+                  style="min-height: 370px; margin: 0;"
+                  height="370"
+                  width="100%"
+                  class="hidden sm:block object-cover object-some-left"
+                  src="./jest-handbook-3d-3-device.png"
+                  alt="The Jest Handbook Cover"
+                />
+              </picture>`;
           } else {
-            document.querySelector('#img').innerHTML = `<img 
-              height="250"
-              width="100%"
-              style="min-height: 250px; margin-top: 0;" 
-              class="md:hidden object-cover object-some-left"
-              src="./jest-handbook-3d-2-book.png"
-              alt="The Jest Handbook Cover"
-            />`
+            if (lastImgInjection === 'small') return;
+            lastImgInjection = 'small';
+            document.querySelector('#img-small').innerHTML = `
+              <picture
+                style="height: 300px; margin: 0;" 
+                class="md:hidden object-cover object-some-left""
+              >
+                <source srcset="./jest-handbook-3d-2-book.webp" type="image/webp">
+                <source srcset="./jest-handbook-3d-2-book.png" type="image/png">
+                <img 
+                  height="300"
+                  width="100%"
+                  style="height: 300px; margin: 0;" 
+                  class="md:hidden object-cover object-some-left"
+                  src="./jest-handbook-3d-2-book.png"
+                  alt="The Jest Handbook Cover"
+                />
+              </picture>`;
           }
         }
         document.addEventListener('DOMContentLoaded', function () {
           image(window.innerWidth)
-        })
+        });
+        window.addEventListener('resize', () => {
+          image(window.innerWidth);
+        }, { passive: true });
       })()
     </script>
     <a class="cp-button w-full md:w-1/2 md:mx-auto block rounded hover:bg-blue-400 text-white py-4 font-bold"
@@ -140,7 +165,9 @@
     <blockquote>
       <p>Interested in upgrading your Jest and testing game?</p>
     </blockquote>
-    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook" class="cp-button rounded hover:bg-blue-400 text-white px-6 py-4 mx-auto block font-bold">Get the Jest Handbook (100 pages)
+    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook"
+      class="cp-button rounded hover:bg-blue-400 text-white px-6 py-4 mx-auto block font-bold">Get the Jest Handbook
+      (100 pages)
       now</a>
     <h3 id="why-jest-a-note-from-the-author">Why Jest? A note from the author</h3>
     <p>Jest is the most widespread solution to test JavaScript applications. Jest is a modern, batteries-included
@@ -152,18 +179,25 @@
         href="https://www.npmtrends.com/jest-vs-mocha-vs-ava-vs-jasmine-vs-qunit-vs-chai">npmtrends Jest vs Mocha vs AVA
         vs Jasmine vs QUnit vs Chai</a>. Jest came out of efforts from Facebook. It's is used at a plethora of small and
       large companies including Facebook, AirBnB, The New York Times and Spotify.</p>
-    <p><img src="./jest-vs-other.jpg"
-        alt="2 year trends (November 2019) for Jest vs Mocha, AVA, Jasmine, QUnit and Chai"></p>
+    <p>
+      <picture>
+        <source srcset="./jest-vs-other.webp" type="image/webp">
+        <img src="./jest-vs-other.jpg"
+          alt="2 year trends (November 2019) for Jest vs Mocha, AVA, Jasmine, QUnit and Chai">
+      </picture>
+    </p>
     <p>I've looked around the web for resources dedicated to teaching you the ins and outs of Jest. The vast majority of
       solutions are GitHub issues or StackOverflow posts, and there are a few React/Vue.js (framework specific) testing
       books out there. None really focus on Jest itself and how it can be leveraged to write better tests, faster.</p>
     <p>The Jest Handbook is an example and solutions-driven book that will teach you in the ins and outs of testing
       JavaScript applications with Jest.</p>
-    <h3 id="about-the-author">
-      <img class="inline-block h-16 w-16 rounded" alt="Hugo Di Francesco" src="./hugo-x100.jpg"
-        width="64"
-        height="64"
-        style="margin-top: 1rem; margin-bottom: 1rem;"> About the Author
+    <h3 id="about-the-author" class="flex items-center">
+      <picture class="h-16 w-16 rounded inline-block">
+        <source srcset="./hugo-x100.webp" type="image/webp">
+        <source srcset="./hugo-x100.jpg" type="image/jpeg">
+        <img style="margin: 0" class="rounded" src="./hugo-x100.jpg" alt="Hugo Di Francesco">
+      </picture>
+      About the Author
     </h3>
     <p>Hugo Di Francesco is a co-author of &quot;Professional JavaScript&quot; with Packt. He runs the Code with Hugo
       website helping over 100,000 developers every month and holds an MEng in Mathematical Computation from University
@@ -187,7 +221,8 @@
       <li><a href="https://codewithhugo.com/jest-exclude-coverage/">Jest ignore or exclude file/function/statement from
           test coverage</a></li>
     </ul>
-    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook" class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
+    <a href="https://checkoutpage.co/checkout/hugo/jest-handbook"
+      class="cp-button rounded hover:bg-blue-400 text-white my-10 mt-12 px-6 py-4 mx-auto block font-bold"
       data-seller="hugo" data-checkout="jest-handbook">Get The Jest Handbook now</a>
   </div>
 
